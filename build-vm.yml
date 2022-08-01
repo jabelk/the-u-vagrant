@@ -1,0 +1,11 @@
+---
+- hosts: all
+  connection: paramiko
+  become: yes
+
+  vars:
+    user: vagrant
+    hostname: the_u
+
+  tasks:
+    - import_tasks: tasks/linux_packs.yml
