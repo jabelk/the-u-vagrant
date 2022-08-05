@@ -1,0 +1,7 @@
+---
+
+- name: Install LibreOffice
+  apt: 
+    name: ['libreoffice', 'libreoffice-gnome']
+    state: latest 
+    

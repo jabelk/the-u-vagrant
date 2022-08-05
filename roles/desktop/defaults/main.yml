@@ -1,0 +1,30 @@
+---
+
+desktop_enabled: 'no'
+desktop:
+  packages:
+    - 'bleachbit'
+    - 'byzanz'
+    - 'caffeine'
+    - 'cifs-utils'
+    - 'easytag'
+    - 'geany'
+    - 'inotify-tools'
+    - 'jq'
+    - 'libnotify-bin'
+    - 'meld'
+    - 'mpv'
+    - 'pinta'
+    - 'rhythmbox'
+    - 'rxvt-unicode-256color'
+    - 'sox'
+    - 'tilda'
+    - 'ubuntu-restricted-extras'
+    - 'vlc'
+    - 'wmctrl'
+    - 'xclip'
+    - 'xdotool'
+    - 'xfce4' # https://stackoverflow.com/questions/31845472/how-do-i-install-a-vagrant-linux-box-that-has-a-gui-gnome-kde
+    - 'virtualbox-guest-dkms'
+    - 'virtualbox-guest-utils'
+    - 'virtualbox-guest-x11'

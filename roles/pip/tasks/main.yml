@@ -1,0 +1,6 @@
+---
+
+  - name: INSTALL PIP PACKAGES
+    ansible.builtin.pip:
+      executable: "pip3"
+      name: "{{ python_packages }}"
