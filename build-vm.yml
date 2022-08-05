@@ -6,6 +6,37 @@
   vars:
     user: vagrant
     hostname: the_u
+  roles:
+    - role: common
+      become: true
+    - role: 'aws/cli'
+    - role: 'aws/ebcli'
+    - role: 'aws/ecscli'
+      become: true
+    - role: docker
+      become: true
+    - role: java/openjdk
+    - role: python
+    - role: pip
+    - role: ssh
+      become: true
+    - role: desktop
+    - role: chromium
+      become: true
+    - role: filezilla
+      become: true
+    - role: firefox
+      become: true
+    - role: libreoffice
+      become: true
+    - role: sublime3
+      become: true
+    - role: vscode
+      become: true    
+    - role: vscodium
+      become: true  
+    - role: pycharm
+      become: true    
 
-  tasks:
-    - import_tasks: tasks/linux_packs.yml
+  # tasks:
+    # - import_tasks: tasks/linux_packs.yml

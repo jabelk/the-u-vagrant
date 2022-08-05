@@ -1,0 +1,22 @@
+---
+
+- name: Install common desktop packages
+  become: true
+  apt: 
+    pkg: "{{ desktop.packages }}"
+    install_recommends: no
+    state: latest
+    update_cache: yes 
+    cache_valid_time: "{{ aptcachetime }}"
+
+    #- easytag # audio files metadata management
+    #- byzanz # screen recording
+    #- meld # Diff / merge tool
+    #- pinta # light paint.net equivalent
+    #- sox # to play sounds
+    #- tilda # lighter than guake
+    #- ubuntu-restricted-extras # MP3, Microsoft fonts, Flash plugin, LAME and DVD playback
+    #- wmctrl # to control windows
+    #- xclip # to manipulate the clipboard
+    #- xdotool # to control windows
+    #- caffeine # prevent the desktop becoming idle in full-screen mode
