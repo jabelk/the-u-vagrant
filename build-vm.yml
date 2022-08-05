@@ -37,6 +37,3 @@
       become: true  
     - role: pycharm
       become: true    
-
-  # tasks:
-    # - import_tasks: tasks/linux_packs.yml
